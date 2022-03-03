@@ -13,7 +13,6 @@ export const Home = () => {
       <InfoSection {...homeObjOne}/>
       <InfoSection {...homeObjTwo}/>
       <InfoSection {...homeObjThree}/>
-      <InfoSection {...homeObjFour}/>
     </>
   )
 }

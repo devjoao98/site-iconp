@@ -17,12 +17,12 @@ const InfoSection = ({
     primary,
     ligthBg, 
     imgStart, 
-    ligthTopLine, 
-    ligthtTextDesc, 
+    lightTopLine, 
+    lightTextDesc, 
     buttonLabel, 
     description, 
     headline,
-    ligthtText,
+    lightText,
     topLine,
     img,
     alt,
@@ -36,16 +36,16 @@ const InfoSection = ({
                         <InfoColumn>
                             <TextWrapper>
                                 <TextWrapper>
-                                    <TopLine ligthtTopLine={ligthTopLine}>
+                                    <TopLine lightTopLine={lightTopLine}>
                                         {topLine}
                                     </TopLine>
-                                    <Heading ligthtText={ligthtText}>
+                                    <Heading lightText={lightText}>
                                         {headline}
                                     </Heading>
-                                    <Subtitle ligthtTextDesc={ligthtTextDesc}>
+                                    <Subtitle lightTextDesc={lightTextDesc}>
                                         {description}
                                     </Subtitle>
-                                    <Link to='/blog'>
+                                    <Link to='/contato'>
                                         <Button big fontBig primary={primary}>
                                             {buttonLabel}
                                         </Button>
