@@ -45,7 +45,7 @@ const InfoSection = ({
                                     <Subtitle lightTextDesc={lightTextDesc}>
                                         {description}
                                     </Subtitle>
-                                    <Link to='/contato'>
+                                    <Link to='/Contact'>
                                         <Button big fontBig primary={primary}>
                                             {buttonLabel}
                                         </Button>

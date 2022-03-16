@@ -52,21 +52,21 @@ window.addEventListener('resize', showButton )
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to='/'>Início</NavLinks>
+                <NavLinks to='/'>Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/Servicos'>Serviços</NavLinks>
+                <NavLinks to='/Services'>Services</NavLinks>
               </NavItem>              
               <NavItem>
-                <NavLinks to='/Produtos'>Produtos</NavLinks>
+                <NavLinks to='/Products'>Products</NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='/Contato'>
-                    <Button primary>Contato</Button>
+                  <NavBtnLink to='/Contact'>
+                    <Button primary>SIGN UP</Button>
                   </NavBtnLink>
               ) : (
-                <NavBtnLink to='/Contato'>
+                <NavBtnLink to='/Contact'>
                   <Button fontBig primary>Contato</Button>
                 </NavBtnLink>
               )}
