@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { Button } from '../../globalStyles'
+
 import { 
   Nav, 
   NavbarContainer, 
@@ -19,10 +20,11 @@ import {
 
 const Navbar = () => {
 
-  const [click, setClick] = useState(false)
-  const [button, setButton] = useState(true)
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click)
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
     if(window.innerWidth <= 960){
@@ -43,7 +45,7 @@ window.addEventListener('resize', showButton )
       <IconContext.Provider value={{ color:'#fff' }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to='/'>
+            <NavLogo to='/' onClick={closeMobileMenu}>
               <NavIcon />
               ICONP
             </NavLogo>
@@ -55,19 +57,19 @@ window.addEventListener('resize', showButton )
                 <NavLinks to='/'>Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/Services'>Services</NavLinks>
+                <NavLinks to='/services'>Services</NavLinks>
               </NavItem>              
               <NavItem>
-                <NavLinks to='/Products'>Products</NavLinks>
+                <NavLinks to='/products'>Products</NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='/Contact'>
+                  <NavBtnLink to='/sigin-up'>
                     <Button primary>SIGN UP</Button>
                   </NavBtnLink>
               ) : (
-                <NavBtnLink to='/Contact'>
-                  <Button fontBig primary>Contato</Button>
+                <NavBtnLink to='/sigin-up'>
+                  <Button fontBig primary>SIGN UP</Button>
                 </NavBtnLink>
               )}
               </NavItemBtn>
